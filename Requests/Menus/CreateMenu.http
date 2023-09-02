@@ -1,0 +1,24 @@
+@host=http://localhost:5051
+@hostId=bf21cdaf-0d5e-40a5-b11e-4ebca2979aff
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjZmEwMTBlZS04NDVjLTQ3OTUtOGRmOS1kNDY0MWYwYjJiNTYiLCJnaXZlbl9uYW1lIjoiYWRlbUBhZGVtLmNvbSIsImZhbWlseV9uYW1lIjoiQWRlbSIsImp0aSI6IjE0YjBkNDhiLWIzMDAtNDk2Ni04NTE3LTAzNWJjNDhkMmNlNyIsImV4cCI6MTY5MzY2Mzc4MiwiaXNzIjoiRGlubmVyIiwiYXVkIjoiRGlubmVyIn0.2hd7rLHWNjVG2WIg52XB8Fc22p2bmE9BPgEYrnv2lD8
+POST {{host}}/hosts/{{hostId}}/menus 
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name":"menu name",
+    "Description":"menu Description",
+    "Sections":[
+        {
+            "name":"sect name",
+            "Description":"sect Description",
+            "Items":[
+                {
+                    "name":"Items name",
+                    "Description":"Items Description"
+            
+                }
+            ]
+        }
+    ]
+}
